@@ -1,6 +1,6 @@
 describe('Formulário de Consultoria', () => {
 
-    it.only('Deve solicitar consultoria individual', () => {
+    it('Deve solicitar consultoria individual', () => {
         cy.start()
         cy.submitLoginForm('papito@webdojo.com', 'katana123')
 
@@ -114,12 +114,16 @@ describe('Formulário de Consultoria', () => {
         cy.contains('button', 'Enviar formulário')
             .click()
 
-        cy.contains('p', 'Digite nome e sobrenome')
+        cy.get('#name')
+            .parent()
+            .contains('p', 'Campo obrigatório')
             .should('be.visible')
             .and('have.class', 'text-red-400')
             .and('have.css', 'color','rgb(248, 113, 113)')
 
-        cy.contains('p', 'Informe um email válido')
+        cy.get('#email')
+            .parent()
+            .contains('p', 'Campo obrigatório')
             .should('be.visible')
             .and('have.class', 'text-red-400')
             .and('have.css', 'color','rgb(248, 113, 113)')

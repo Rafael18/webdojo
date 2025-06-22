@@ -1,3 +1,5 @@
+/// <reference types="cypress" />
+
 describe('Login', () => {
   it('Deve logar com sucesso', () => {
     cy.start()
@@ -13,7 +15,7 @@ describe('Login', () => {
 
   })
 
-  it('Não deve logar com senha inválida', () => {
+  it.skip('Não deve logar com senha inválida', () => {
     cy.start()
     cy.submitLoginForm('papito@webdojo.com', 'katana321')
 

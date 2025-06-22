@@ -6,5 +6,7 @@ module.exports = defineConfig({
       // implement node event listeners here
     },
     // defaultCommandTimeout: 7000
+    // experimentalStudio: true,
+    // video: true
   },
 });

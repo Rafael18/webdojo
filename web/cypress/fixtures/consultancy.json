@@ -1,0 +1,45 @@
+{
+  "personal": {
+    "name": "Rafael Batista",
+    "email": "rafaeltec_@live.com",
+    "phone": "81 98337-9052",
+    "consultancyType": "Individual",
+    "personType": "cpf",
+    "document": "08858796438",
+    "discoveryChannels": [
+      "Instagram",
+      "LinkedIn",
+      "Udemy",
+      "YouTube",
+      "Indicação de Amigo"
+    ],
+    "file": "./cypress/fixtures/teste_upload.pdf",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has.",
+    "techs": [
+      "Cypress",
+      "Selenium",
+      "WebDriverIO",
+      "Playwright",
+      "Robot Framework"
+    ],
+    "terms": true
+  },
+  "company": {
+    "name": "Rafael Batista",
+    "email": "rafaeltec_@live.com",
+    "phone": "81 98337-9052",
+    "consultancyType": "In Company",
+    "personType": "cnpj",
+    "document": "23466341000152",
+    "discoveryChannels": [
+      "Instagram",
+      "LinkedIn"
+    ],
+    "file": "./cypress/fixtures/teste_upload.pdf",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has.",
+    "techs": [
+      "Cypress"
+    ],
+    "terms": true
+  }
+}
